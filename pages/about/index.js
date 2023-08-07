@@ -10,10 +10,7 @@ import {
   FaFigma,
 } from "react-icons/fa";
 
-import {
-  SiTailwindcss,
-  SiBootstrap,
-} from "react-icons/si";
+import { SiTailwindcss, SiBootstrap } from "react-icons/si";
 
 //components
 import Avatar from "../../components/Avatar";
@@ -34,12 +31,12 @@ const aboutData = [
       {
         title: "Web Development",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiTailwindcss />,
-          <SiBootstrap />,
+          <FaHtml5 key={"one"} />,
+          <FaCss3 key={"two"} />,
+          <FaJs key={'three'} />,
+          <FaReact key={'four'} />,
+          <SiTailwindcss key={'five'} />,
+          <SiBootstrap key={'six'}/>,
         ],
       },
     ],
