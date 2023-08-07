@@ -1,5 +1,34 @@
+// next Image
+import Image from "next/image";
+
+// next Link
+import Link from "next/link";
+
+//components
+import Socials from "../components/Socials";
+
 const Header = () => {
-  return <header>Header</header>;
+  return (
+    <header className="w-full absolute z-30 flex items-center px-16 xl:px-0 xl:h-[90px]">
+      <div className="container mx-auto">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8">
+          {/* logo */}
+          <Link href={"/"}>
+            {/* <Image
+              src={"/logo.svg"}
+              width={220}
+              height={48}
+              alt=""
+              priority={true}
+            /> */}
+            <h2 className="text-[20px]">Eldor Shodmonov</h2>
+          </Link>
+          {/* Socials */}
+          <Socials />
+        </div>
+      </div>
+    </header>
+  );
 };
 
 export default Header;
